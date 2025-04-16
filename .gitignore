@@ -1,0 +1,53 @@
+# Ignore trained models and large files
+*.pt
+*.pth
+*.h5
+*.ckpt
+*.onnx
+*.tflite
+*.pb
+models/
+checkpoints/
+*.tar
+*.gz
+*.zip
+
+# Ignore dataset cache and logs
+__pycache__/
+*.log
+*.csv
+*.npy
+*.npz
+*.pkl
+*.json
+
+# Ignore images or result directories
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.tiff
+*.gif
+*.svg
+results/
+outputs/
+runs/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# VSCode or PyCharm config
+.vscode/
+.idea/
+
+# Ignore temporary or cache files
+*.tmp
+*.cache
+*.bak
+*.swp
+*.swo
+*.~lock.*

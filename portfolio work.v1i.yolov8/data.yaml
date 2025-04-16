@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 7
+names: ['Nescafe', 'Nivea cream', 'loreal men sower gel', 'milo', 'mug', 'toothbrush', 'toothpaste']
+
+roboflow:
+  workspace: kaya-robot-vision-project
+  project: portfolio-work
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/kaya-robot-vision-project/portfolio-work/dataset/1
