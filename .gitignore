@@ -1,62 +1,66 @@
-# Ignore trained models and large files
+# === Python ===
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints/
+
+# === Environments ===
+.venv/
+venv/
+*/yolov8_env/
+*/venv/
+
+# === Checkpoints & Model Files ===
 *.pt
 *.pth
-*.h5
-*.ckpt
 *.onnx
+*.ckpt
 *.tflite
-*.pb
-models/
-checkpoints/
-*.tar
-*.gz
-*.zip
-
-# Ignore dataset cache and logs
-__pycache__/
-*.log
-*.csv
-*.npy
-*.npz
+*.h5
+*.joblib
 *.pkl
-*.json
 
-# Ignore images or result directories
-*.png
-*.jpg
-*.jpeg
-*.bmp
-*.tiff
-*.gif
-*.svg
-results/
-outputs/
+# === Datasets & Outputs ===
+output/
 runs/
+results/
+*.tar
+*.zip
+*.npy
 
-# Jupyter Notebook checkpoints
+# === YOLO Results ===
+*/results/
+*/weights/
+
+# === Jupyter Checkpoints ===
 .ipynb_checkpoints/
 
-# Ignore system files
+# === Logs & Caches ===
+*.log
+*.cache/
+.cache/
+# Virtual environments
+.venv/
+*/venv/
+*/yolov8_env/
+
+# Checkpoints / model outputs
+**/weights/
+**/output/
+**/runs/
+**/results/
+
+# Datasets & COCO annotations (optional if regenerable)
+**/train/
+**/val/
+**/test/
+**/datasets/
+**/*.json
+
+# Cache, logs, system
+__pycache__/
+*.log
+*.pth
+*.pt
+*.onnx
+*.zip
 .DS_Store
-Thumbs.db
-
-# VSCode or PyCharm config
-.vscode/
-.idea/
-
-# Ignore temporary or cache files
-*.tmp
-*.cache
-*.bak
-*.swp
-*.swo
-*.~lock.*
-#ignore backup files
-*.orig
-*.old
-# Ignore virtual environment directories
-venv/
-env/
-#ignore segmentation masks
-coco_panoptic/
-panopticapi_converters/
