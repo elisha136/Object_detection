@@ -1,0 +1,11 @@
+path: /home/manulab/Downloads/coco_dataset
+train: images/train
+val: images/val
+names:
+  0: Nescafe
+  1: Milo
+  2: Loreal Men Shower Gel
+  3: Mug
+  4: Nivea Cream
+  5: Toothbrush
+  6: Toothpaste
